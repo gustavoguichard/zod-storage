@@ -1,0 +1,40 @@
+{
+  "name": "zod-storage",
+  "version": "0.0.0",
+  "description": "Type-safe local and session storage",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "author": "Gustavo Guichard <@gugaguichard>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup ./src/index.ts --format esm,cjs --dts",
+    "dev": "tsup ./src/index.ts --format esm,cjs --watch --dts",
+    "lint": "eslint *.ts*",
+    "tsc": "tsc",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "eslint": "latest",
+    "jsdom": "^22.1.0",
+    "prettier": "latest",
+    "tsup": "^7.1.0",
+    "typescript": "^5.1.6",
+    "vitest": "latest",
+    "zod": "latest"
+  },
+  "files": [
+    "README.md",
+    "./dist/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gugaguichard/make-service.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gugaguichard/make-service/issues"
+  }
+}
